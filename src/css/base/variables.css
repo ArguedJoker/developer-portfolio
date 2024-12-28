@@ -1,0 +1,20 @@
+:root {
+  /* Colors */
+  --primary-color: #2dd4bf;
+  --secondary-color: #0d9488;
+  --dark: #1f2937;
+  --light: #f8fafc;
+  --background: #ffffff;
+  --transition: all 0.3s ease;
+
+  /* Spacing */
+  --section-padding: 5rem 0;
+  --container-width: 80%;
+  
+  /* Border */
+  --border-radius: 8px;
+  --border-color: #ddd;
+  
+  /* Shadow */
+  --box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}

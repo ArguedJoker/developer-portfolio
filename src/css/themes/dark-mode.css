@@ -1,0 +1,41 @@
+/* Dark Mode Theme */
+.dark {
+    --background: var(--dark);
+    --text-color: var(--light);
+}
+
+/* Dark Mode Element Styles */
+.dark .navbar {
+    background: var(--dark);
+}
+
+.dark .hero {
+    background: var(--background);
+}
+
+.dark .project-card {
+    background: var(--dark);
+    border-color: var(--primary-color);
+}
+
+.dark .project-card h3,
+.dark .project-card h4,
+.dark .project-card p,
+.dark .project-card .features-list li {
+    color: var(--light);
+}
+
+.dark .btn-secondary {
+    color: var(--light);
+    border-color: var(--light);
+}
+
+.dark .footer {
+    background: var(--dark);
+    border-color: var(--primary-color);
+}
+
+.dark .modal-content {
+    background: var(--dark);
+    color: var(--light);
+}

@@ -1,0 +1,26 @@
+/* Deuteranopia Mode */
+.deuteranopia {
+    --primary-color: #0066cc;
+    --secondary-color: #003366;
+    --dark: #1f2937;
+    --light: #f8fafc;
+    --background: #e6f3ff;
+}
+
+/* Protanopia Mode */
+.protanopia {
+    --primary-color: #0099cc;
+    --secondary-color: #006699;
+    --dark: #1f2937;
+    --light: #f8fafc;
+    --background: #e6f3ff;
+}
+
+/* Tritanopia Mode */
+.tritanopia {
+    --primary-color: #ff9900;
+    --secondary-color: #cc7a00;
+    --dark: #1f2937;
+    --light: #f8fafc;
+    --background: #fff5e6;
+}

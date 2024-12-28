@@ -1,0 +1,30 @@
+.container {
+    width: var(--container-width);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section-container {
+    padding: var(--section-padding);
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.fluid-container {
+    width: 100%;
+    padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    .fluid-container {
+        padding: 0 1rem;
+    }
+}

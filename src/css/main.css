@@ -1,0 +1,26 @@
+/* Base Styles */
+@import './base/reset.css';
+@import './base/typography.css';
+@import './base/variables.css';
+
+/* Layout */
+@import './layout/grid.css';
+@import './layout/containers.css';
+
+/* Components */
+@import './components/navbar.css';
+@import './components/hero.css';
+@import './components/projects.css';
+@import './components/skills.css';
+@import './components/contact.css';
+@import './components/modal.css';
+@import './components/footer.css';
+
+/* Utilities */
+@import './utilities/buttons.css';
+@import './utilities/alerts.css';
+@import './utilities/animations.css';
+
+/* Themes */
+@import './themes/dark-mode.css';
+@import './themes/colorblind.css';
