@@ -87,21 +87,22 @@ a:hover {
   align-items: center;
 }
 
+/* Update navbar container layout */
 .navbar .container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  gap: 1rem;
 }
 
 .navbar-brand {
-  flex: 1;
+  justify-self: start;
 }
 
 .theme-controls {
+  justify-self: center;
   display: flex;
-  justify-content: center;
   gap: 1rem;
-  flex: 1;
 }
 
 /* Navbar toggler styles */
@@ -139,6 +140,7 @@ a:hover {
 }
 
 .navbar-nav {
+  justify-self: end;
   margin-left: auto !important; /* Force right alignment */
 }
 
@@ -552,6 +554,14 @@ social-links a:hover {
 
   .contact-section {
     max-width: 100%;
+  }
+
+  .navbar .container {
+    grid-template-columns: auto 1fr auto;
+  }
+  
+  .theme-controls {
+    justify-self: center;
   }
 }
 
