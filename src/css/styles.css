@@ -563,6 +563,37 @@ social-links a:hover {
   .theme-controls {
     justify-self: center;
   }
+
+  /* Update mobile navbar styles */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: auto;
+    background: var(--light);
+    padding: 1rem;
+    border-radius: 0 0 0 8px;
+    box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .navbar-nav {
+    margin: 0 !important;
+    padding: 0;
+  }
+
+  .nav-item {
+    text-align: right;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-link {
+    white-space: nowrap;
+  }
+
+  /* Dark mode support */
+  .dark .navbar-collapse {
+    background: var(--dark);
+  }
 }
 
 /* Small devices */
@@ -580,6 +611,39 @@ social-links a:hover {
   /* Form */
   .contact-form {
     padding: 0;
+  }
+}
+
+/* Media query for medium screens */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: auto;
+    background: var(--light);
+    padding: 1rem;
+    border-radius: 0 0 0 8px;
+    box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .navbar-nav {
+    margin: 0 !important;
+    padding: 0;
+  }
+
+  .nav-item {
+    text-align: right;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-link {
+    white-space: nowrap;
+  }
+
+  /* Dark mode support */
+  .dark .navbar-collapse {
+    background: var(--dark);
   }
 }
 
@@ -795,4 +859,28 @@ section:not(:last-child)::after {
 
 .dark .tooltip::before {
   background: var(--light);
+}
+
+/* Dark mode support for medium and small screens */
+@media (max-width: 991px) {
+  .dark .navbar-collapse {
+    background: var(--dark);
+  }
+
+  .dark .nav-link {
+    color: var(--light);
+  }
+
+  .dark .nav-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .dark .navbar-toggler {
+    border-color: var(--light);
+    color: var(--light);
+  }
+
+  .dark .navbar-toggler-icon {
+    filter: invert(1);
+  }
 }
