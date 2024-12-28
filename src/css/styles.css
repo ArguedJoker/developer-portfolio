@@ -666,8 +666,14 @@ social-links a:hover {
 }
 
 .dark .project-card {
-  background: var(--light);
+  background: var(--dark); /* Change to dark background */
   border-color: var(--primary-color);
+}
+
+.dark .project-card h3,
+.dark .project-card h4,
+.dark .project-card p {
+  color: var(--light); /* Ensure text is light colored */
 }
 
 .dark .skills-badge {
