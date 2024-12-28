@@ -6,6 +6,7 @@ const Skills = () => {
         { name: 'React', level: 'Advanced' },
         { name: 'Node.js', level: 'Intermediate' },
         { name: 'Python', level: 'Intermediate' },
+        { name: 'PHP', level: 'Intermediate' },    // Added PHP
         { name: 'HTML/CSS', level: 'Advanced' },
         { name: 'Git', level: 'Advanced' },
         { name: 'AWS', level: 'Intermediate' },
