@@ -36,8 +36,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './public/index.html',
-            favicon: './public/favicon.ico'
+            template: './public/index.html'
+            // Remove favicon option until we have a proper .ico file
         }),
         new Dotenv({
             systemvars: true,
