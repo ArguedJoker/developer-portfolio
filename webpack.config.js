@@ -9,7 +9,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
         clean: true,
-        publicPath: '/'
+        publicPath: '/developer-portfolio/'
     },
     module: {
         rules: [
@@ -37,7 +37,6 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html'
-            // Remove favicon option until we have a proper .ico file
         }),
         new Dotenv({
             systemvars: true,
