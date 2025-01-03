@@ -7,9 +7,15 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: 'bundle.[contenthash].js',
         clean: true,
         publicPath: '/developer-portfolio/'
+    },
+    optimization: {
+        minimize: true,
+        splitChunks: {
+            chunks: 'all'
+        }
     },
     module: {
         rules: [
@@ -36,7 +42,11 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './public/index.html'
+            template: './public/index.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true
+            }
         }),
         new Dotenv({
             systemvars: true,
